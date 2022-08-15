@@ -5,7 +5,7 @@ import Result from "./Result";
 export default function Dictionary() {
 	const [value, setValue] = useState("");
 	const [result, setResult] = useState(null);
-	
+
 	function handleResponse(response) {
 		console.log(response.data[0]);
 		setResult(response.data[0]);
@@ -25,6 +25,7 @@ export default function Dictionary() {
 					<input type="search" onChange={handleChange}/> 
 					<Result data={result}/>
 				</form>
+				<footer> <a href='https://github.com/ElizabethVasilenko13/dictionary-app-react'> Open-source code</a> by Elizabeth Vasilenko </footer>
 			</div>
 		);
 }
