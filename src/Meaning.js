@@ -4,9 +4,9 @@ import Example from './Example';
 export default function Meaning(props) {
 	function synonyms() {
 		if (props.meaning.synonyms) {
-			return <ul>
+			return <ul className="synonyms">
 				{props.meaning.synonyms.map((el, index) => {
-					return <li>{el}</li>;
+					return <li key={index}>{el}</li>;
 				})}
 			</ul>
 		}
@@ -20,7 +20,10 @@ export default function Meaning(props) {
 			{props.meaning.definitions.map((definition, index) => {
 				return (
 					<div key={index}>
-						<p>{definition.definition}</p>
+						<ul>
+							<li>{definition.definition}</li>
+						</ul>
+						
 						<Example data = {definition}/>
 					</div>
 				);

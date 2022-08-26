@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import Result from "./Result";
+import './Student.css';
 
 export default function Dictionary() {
 	const [value, setValue] = useState("");
@@ -21,8 +22,12 @@ export default function Dictionary() {
 	}
 		return (
 			<div className='dictionary'>
+				<h1>React Dictionary</h1>
 				<form onSubmit={search}>
-					<input type="search" onChange={handleChange}/> 
+					<section>
+						<label>What word do you want to look up?</label>
+						<input type="search" onChange={handleChange} placeholder="Enter keyword"/> 
+					</section>
 					<Result data={result}/>
 				</form>
 				<footer> <a href='https://github.com/ElizabethVasilenko13/dictionary-app-react'> Open-source code</a> by Elizabeth Vasilenko </footer>
