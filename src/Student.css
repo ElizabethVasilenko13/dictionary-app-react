@@ -1,10 +1,12 @@
 body {
 	background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-	padding: 40px 0 100px;
+	padding: 40px 0 22%;
     max-width: 960px;
     margin: 0 auto;
 	color: #343434;
 	font-size: 17px;
+}
+.dictionary {
 }
 .dictionary h1 {
 	text-align: center;
@@ -45,6 +47,13 @@ section {
 	margin: 0;
 	padding-bottom: 10px;
 }
+.result h3 {
+	font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+    color: #774CFE;
+}
 .phonetic {
 	display: flex;
 	padding-bottom: 5px;
@@ -68,4 +77,23 @@ section {
 }
 .synonyms {
 	padding: 0;
+}
+.definition ul {
+	padding-left: 15px;
+
+}
+.definition li {
+	list-style: square;
+    color: #774CFE;
+}
+.definition li span {
+    color:#343434;
+}
+.example {
+	font-size: 15px;
+	color: #9d9da5;
+}
+footer {
+	margin-top: 20px;
+	text-align: center;
 }

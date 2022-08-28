@@ -14,14 +14,13 @@ export default function Meaning(props) {
 	
 	return (
 		<div>
-			
 			<h3>{props.meaning.partOfSpeech}</h3>
 			{synonyms()}
 			{props.meaning.definitions.map((definition, index) => {
 				return (
-					<div key={index}>
+					<div className="definition" key={index}>
 						<ul>
-							<li>{definition.definition}</li>
+							<li><span>{definition.definition}</span></li>
 						</ul>
 						
 						<Example data = {definition}/>
