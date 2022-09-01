@@ -22,7 +22,6 @@ export default function Meaning(props) {
 						<ul>
 							<li><span>{definition.definition}</span></li>
 						</ul>
-						
 						<Example data = {definition}/>
 					</div>
 				);

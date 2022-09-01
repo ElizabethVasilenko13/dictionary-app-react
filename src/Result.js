@@ -3,6 +3,7 @@ import Meaning from './Meaning';
 import Phonetics from "./Phonetics";
 
 export default function Result(props) {
+
 	if(props.data) {
 		return (
 			<div className="result">
@@ -17,15 +18,12 @@ export default function Result(props) {
 						);
 					})}
 				</section>
-				
-
-				
 				{props.data.meanings.map((el, index) => {
 					return (
 						<section>
-						<div key={index}>
-							<Meaning meaning={el}/>
-						</div>
+							<div key={index}>
+								<Meaning meaning={el}/>
+							</div>
 						</section>
 					);
 				})}
